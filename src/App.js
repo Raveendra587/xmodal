@@ -45,12 +45,7 @@ const XModal = () => {
     }
     closeModal();
   };
-  const handleModalClick = (e) => {
-    if (e.target.className === "modal") {
-      closeModal();
-    }
-  };
-
+  const handleModalClick = () => closeModal();
   return (
     <div className="app">
       <h1>User Details Modal</h1>
