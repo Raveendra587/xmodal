@@ -60,7 +60,7 @@ const XModal = () => {
 
       {isOpen && (
         <div className="modal" onClick={handleModalClick}>
-          <div className="modal-content">
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <form onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="username">Username:</label>
